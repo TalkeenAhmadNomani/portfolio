@@ -2,13 +2,48 @@ import { motion } from "framer-motion";
 import Typewriter from "react-typewriter-effect";
 import profile from "../assets/profile.jpg";
 
+const ParticlesBackground = () => {
+  const particles = Array.from({ length: 30 }, (_, i) => i);
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {particles.map((_, index) => {
+        const size = Math.random() * 6 + 4;
+        return (
+          <motion.div
+            key={index}
+            className="absolute bg-white rounded-full opacity-50"
+            style={{
+              width: `${size}px`,
+              height: `${size}px`,
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, Math.random() * 50 - 25],
+              x: [0, Math.random() * 50 - 25],
+            }}
+            transition={{
+              duration: Math.random() * 5 + 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
 const HeroSection = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between w-4/5 mx-auto h-screen relative">
+    <section className="flex flex-col md:flex-row items-center justify-between w-4/5 mx-auto h-screen relative overflow-hidden">
+      <ParticlesBackground />
       {/* Left Side */}
       <div className="text-white max-w-lg text-center md:text-left">
         <h1 className="text-4xl font-bold">
-          Hi, I am <span className="text-blue-400">Swarup Chanda</span>
+          Hi, I am <span className="text-blue-400">Talkeen Ahmad Nomani</span>
         </h1>
         <div className="overflow-hidden">
           <Typewriter
@@ -22,7 +57,7 @@ const HeroSection = () => {
           />
         </div>
         <p className="mt-4 text-lg opacity-80">
-          Pursuing a B.Tech in Computer Science and Engineering at NIT Silchar,
+          Pursuing a B.Tech in Mechanical Engineering Department at NIT Silchar,
           I’m on an odyssey of continuous learning. I’m sculpting a
           multidimensional skill set, weaving my experiences into innovation and
           growth.
@@ -43,17 +78,14 @@ const HeroSection = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="w-60 h-60 md:w-72 md:h-72 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
+        <div className="w-80 h-80 md:w-96 md:h-96 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
           <img
             src={profile}
             alt="Profile"
-            className="w-56 h-56 md:w-64 md:h-64 object-cover rounded-full"
+            className="w-72 h-72 md:w-88 md:h-88 object-cover rounded-full"
           />
         </div>
       </motion.div>
-
-      {/* Moving Particles Background */}
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] animate-moveParticles"></div>
     </section>
   );
 };
