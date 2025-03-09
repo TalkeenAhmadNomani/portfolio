@@ -4,7 +4,8 @@ import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
  import Projects from "./components/Projects";
-// import Education from "./components/Education";
+import Education from "./components/Education";
+import Extra from "./components/Extra";
 
 function App() {
   return (
@@ -22,12 +23,15 @@ function App() {
       <div id="experience">
         <Experience />
       </div>
-       <div id="projects">
+      <div id="projects">
         <Projects />
       </div>
-      {/* <div id="education">
+      <div id="extracurricular">
+        <Extra />
+      </div>
+      <div id="education">
         <Education />
-      </div> */}
+      </div>
     </div>
   );
 }
