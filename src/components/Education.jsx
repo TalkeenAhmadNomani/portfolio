@@ -5,25 +5,25 @@ import { motion } from "framer-motion";
 const educationData = [
   {
     degree: "Secondary Education (10th)",
-    institution: "St. Michael's High School (BSEB)",
-    duration: "2018 - 2019",
-    marks: "89%",
+    institution: "B.D.Y High School POHADDI bela Darbhanga (BSEB)",
+    duration: "2019-2020",
+    marks: "85%",
     description:
       "Completed 10th from Bihar Board (BSEB) in Hindi medium, building a strong foundation in mathematics, science, and language skills.",
   },
   {
     degree: "Higher Secondary (12th)",
-    institution: "St. Michael's High School (BSEB)",
-    duration: "2020 - 2021",
-    marks: "88.4%",
+    institution: "Patna Muslim High School (BSEB)",
+    duration: "2020 - 2022",
+    marks: "80%",
     description:
       "Completed 12th from Bihar Board (BSEB) in English medium with a focus on PCM (Physics, Chemistry, Mathematics), enhancing analytical and problem-solving skills.",
   },
   {
     degree: "B.Tech in Mechanical Engineering",
     institution: "NIT Silchar",
-    duration: "2021 - 2025",
-    marks: "7.9 CGPA",
+    duration: "2022 - 2026",
+    marks: "7.85(till 5th sem) CGPA",
     description:
       "Pursuing B.Tech in Mechanical Engineering at NIT Silchar, gaining expertise in design, thermodynamics, manufacturing, and computational analysis.",
   },
