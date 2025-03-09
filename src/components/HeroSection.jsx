@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import Typewriter from "react-typewriter-effect";
 import profile from "../assets/profile.jpg";

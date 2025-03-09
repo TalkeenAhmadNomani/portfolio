@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import project1 from "../assets/project1.webp";
 import project2 from "../assets/project2.webp";
