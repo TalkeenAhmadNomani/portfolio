@@ -7,19 +7,20 @@ const extracurriculars = [
     role: "Head of Video Editing - Gyansagar",
     duration: "March 2024 - Present",
     description:
-      "Leading the video editing team at Gyansagar. Managing and overseeing content creation, ensuring high-quality production for digital media campaigns and promotional materials.",
+      "Leading the video editing team at Gyansagar. Ensuring high-quality production for digital media campaigns and promotional materials. Conducted 2 times 5-days video editing workshop for juniors, providing hands-on training and guiding them continuously to improve their skills in video production and editing.",
   },
+
   {
     role: "Digital Media Handler - Gyansagar",
     duration: "Nov 2024 - Present",
     description:
-      "Responsible for handling social media accounts, creating engaging digital content, and strategizing online presence for Gyansagar to maximize outreach.",
+      "Responsible for handling social media accounts, posting content on social media, and strategizing online presence for Gyansagar to maximize outreach.",
   },
   {
-    role: "Content Creator - Gyansagar",
+    role: "Content Creator - Youtube",
     duration: "Dec 2024 - Present",
     description:
-      "Developing compelling video and written content for Gyansagar, contributing to social impact initiatives through engaging storytelling and informative videos.",
+      "Creating engaging content on YouTube and Instagram focused on self-improvement, motivation, and personal growth. Managing the entire process, including scripting, filming, editing, designing, and strategizing content to maximize audience engagement. Continuously experimenting with new formats and styles to enhance content impact and reach a wider audience.",
   },
   {
     role: "Member - SDC ASME",
